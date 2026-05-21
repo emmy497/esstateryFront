@@ -97,13 +97,13 @@ const Navbar = () => {
             Contact Us
           </NavLink>
 
-          <div className="flex flex-col gap-3 mt-2">
-            <NavLink to="/login" onClick={() => setOpen(false)} className="w-full">
+          <div className="flex flex-col gap-3 mt-2 items-center">
+            <NavLink to="/login" onClick={() => setOpen(false)} className="w-full max-w-[400px]">
               <button className="w-full px-6 py-3 text-[#7065F0] border border-[#7065F0] rounded-[8px]">
                 Login
               </button>
             </NavLink>
-            <NavLink to="/signup" onClick={() => setOpen(false)} className="w-full">
+            <NavLink to="/signup" onClick={() => setOpen(false)} className="w-full max-w-[400px]">
               <button className="w-full px-6 py-3 bg-[#7065F0] text-white rounded-[8px]">
                 Sign up
               </button>

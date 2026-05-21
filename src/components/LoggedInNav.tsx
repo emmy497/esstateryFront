@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { AuthContext } from "../context/authContext";
 import ListingRequestModal from "./ListingRequestModal";
 import LogoutModal from "./LogoutModal";
+import { LogOut } from "lucide-react";
 
 const LoggedInNav = () => {
   const [open, setOpen] = useState(false);
@@ -170,9 +171,10 @@ const LoggedInNav = () => {
             <button
               type="button"
               onClick={() => { setOpen(false); setShowLogoutModal(true); }}
-              className="w-full rounded-[8px] bg-[#7065F0] px-6 py-3 text-white"
+              className="flex items-center justify-center gap-3 px-4 py-3 rounded-lg w-full text-red-500 hover:bg-red-50 transition-all"
             >
-              Logout
+              <LogOut size={20} />
+              Log Out
             </button>
           </div>
         </div>
