@@ -116,10 +116,12 @@ const AccountSettings = () => {
       });
 
       if (response.status === 200 || response.status === 201) {
-        toast.success("Password updated successfully!");
+        toast.success("Password updated! Please sign in again.");
         setCurrentPassword("");
         setNewPassword("");
         setConfirmPassword("");
+        logout();
+        navigate("/login");
       }
     } catch (error: any) {
       toast.error(
