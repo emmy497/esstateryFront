@@ -51,7 +51,7 @@ const SavedProperties = () => {
     <>
       <Navbar />
       <div className="h-[200px] md:h-[280px] lg:h-[330px] bg-[#0C092C] w-full flex flex-col justify-center items-center px-4 text-center">
-        <h1 className="text-[36px] md:text-[36px] lg:text-[48px] font-bold text-white py-[8px]">
+        <h1 className="text-[24px] md:text-[36px] lg:text-[48px] font-bold text-white py-[8px]">
           Your Saved Properties
         </h1>
         <p className="text-[14px] md:text-[16px] lg:text-[18px] text-[#DCD9D9]">
